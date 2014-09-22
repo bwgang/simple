@@ -28,14 +28,14 @@
 <div id="views">
     <div id="login">
         <form class="form-horizontal">
-            <div class="form-group">
+            <div class="form-group" style="display: none;">
                 <label>Github username</label>
                 <div>
-                    <input type="text" name="user" class="form-control" id="loginuser" value="bwgang">
+                    <input type="text" name="user" class="form-control" id="loginuser">
                 </div>
             </div>
             <div class="form-group">
-                <label>Password</label>
+                <label>输入github的登录密码</label>
                 <div>
                     <input type="password" name="pass" class="form-control" id="loginpass">
                 </div>
@@ -82,7 +82,7 @@
                     <div class="form-inline">
                         <div class="form-group">
                             <input type="text" class="form-control" id="posttitle" placeholder="标题">
-                            <input type="text" class="form-control" id="postpath" value="post/2014/" placeholder="Url like intro.html">
+                            <input type="text" class="form-control" id="postpath" placeholder="Url like intro.html">
                             <input type="text" class="form-control" id="postdate" placeholder="2014-02-01">
                             <input type="text" class="form-control" id="posttags" placeholder="标签 可用空格分隔">
                             <a class="btn btn-default" href="#" id="postSave">save</a>
