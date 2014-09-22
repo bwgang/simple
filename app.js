@@ -122,11 +122,11 @@ $(document).ready(function() {
             $("#loading").show();
             e.preventDefault();
             checkpass(this.user.val(), this.pass.val(),
-                      function(){Spine.Route.navigate("/main");},
+                      function(){Spine.Route.navigate("/posts");},
                       curry(errShow, this.err));
         },
         init: function() {
-            this.user.val("");
+            this.user.val("bwgang");
             this.pass.val("");
             $("#loading").hide();
             this.err.hide();
@@ -179,7 +179,7 @@ $(document).ready(function() {
                 repo.read("master", "main.json", function(err, data) {
                     $("#loading").hide();
                     $("#posttitle").val("");
-                    $("#postpath").val("");
+                    $("#postpath").val("post/2014/");
                     $("#postdate").val("");
                     $("#posttags").val("");
                     $("#editmd").val("");
